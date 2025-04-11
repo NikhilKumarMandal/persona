@@ -12,12 +12,25 @@ import { SidebarTrigger } from "@/components/ui/sidebar"
 interface ChatAreaProps {
   activeChatId: string | null
 }
+type Message = {
+  id: string
+  content: string
+  sender: string
+  timestamp: string
+}
+
+type ChatMeta = {
+  name: string
+  avatar: string
+  status: 'online' | 'away' | 'offline' | string
+}
+
 
 export default function ChatArea({ activeChatId }: ChatAreaProps) {
   const [input, setInput] = useState("")
   const [loading, setLoading] = useState(false)
-  const [messages, setMessages] = useState<any[]>([])
-  const [chatMeta, setChatMeta] = useState<any>(null)
+const [messages, setMessages] = useState<Message[]>([])
+const [chatMeta, setChatMeta] = useState<ChatMeta | null>(null)
 
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
