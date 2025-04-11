@@ -1,5 +1,5 @@
 "use client"
-import { Home, Settings } from "lucide-react"
+import { Home } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
