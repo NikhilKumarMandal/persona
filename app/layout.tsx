@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import {ChatSidebar} from "./components/ChatSidebar"
-import ChatArea from "./components/ChatArea"
-import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar"
 
 
 

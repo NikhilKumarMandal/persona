@@ -55,14 +55,8 @@
 
 
 "use client"
-
-import { useState } from "react"
-import {ChatSidebar} from "./components/ChatSidebar"
-import ChatArea from "./components/ChatArea"
-import { SidebarProvider } from "@/components/ui/sidebar"
-
 export default function ChatApp() {
-  const [activeChat, setActiveChat] = useState<string | null>(null)
+
 
   return (
       <h1></h1>
