@@ -100,6 +100,7 @@ const [chatMeta, setChatMeta] = useState<ChatMeta | null>(null)
           timestamp: new Date().toLocaleTimeString(),
         },
       ])
+       console.error(error)
     } finally {
       setLoading(false)
     }

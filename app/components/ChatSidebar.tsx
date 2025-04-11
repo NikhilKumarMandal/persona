@@ -33,7 +33,8 @@ interface ChatSidebarProps {
 }
 
 export default function ChatSidebar({ onSelectChat, activeChat }: ChatSidebarProps) {
-  const [searchQuery, setSearchQuery] = useState("")
+  const [searchQuery] = useState("")
+
   const { setOpenMobile } = useSidebar()
   const [personaMap, setPersonaMap] = useState<Record<string, string>>(
     conversations.reduce((acc, c) => {
