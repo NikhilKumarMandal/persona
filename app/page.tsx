@@ -57,7 +57,7 @@
 "use client"
 
 import { useState } from "react"
-import ChatSidebar from "./components/ChatSidebar"
+import {ChatSidebar} from "./components/ChatSidebar"
 import ChatArea from "./components/ChatArea"
 import { SidebarProvider } from "@/components/ui/sidebar"
 
@@ -65,11 +65,6 @@ export default function ChatApp() {
   const [activeChat, setActiveChat] = useState<string | null>(null)
 
   return (
-    <SidebarProvider>
-      <div className="flex h-screen bg-background overflow-hidden">
-        <ChatSidebar onSelectChat={setActiveChat} activeChat={activeChat} />
-        <ChatArea activeChatId={activeChat} />
-      </div>
-    </SidebarProvider>
+      <h1></h1>
   )
 }
